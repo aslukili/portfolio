@@ -1,16 +1,3 @@
-<!DOCTYPE html>
-<html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-
-    <title>Abdeslam's Portfolio</title>
-
-    <!-- Styles -->
-    <link href="{{ asset('/css/app.css') }}" rel="stylesheet">
-    <script defer src="{{ asset('/js/index.js') }}"></script>
-</head>
-<body class="antialiased">
 <header
     class="sticky top-0 z-30 w-full md:p-2 bg-slate-800 shadow-lg shadow-yellow-300/10 sm:px-4 font-hacking font-medium">
     <nav class="flex flex-wrap items-center justify-between w-full px-4 text-lg text-yellow-100">
@@ -18,6 +5,9 @@
             <a href="#">
                 <img src="{{ asset('/img/Aslukili.png') }}" alt="Abdeslam Loukili Logo" />
             </a>
+        </div>
+        <div>
+
         </div>
         <svg xmlns="http://www.w3.org/2000/svg" id="menu-button" class="h-6 w-6 cursor-pointer md:hidden block"
              fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -42,11 +32,3 @@
         </div>
     </nav>
 </header>
-
-{{ $slot }}
-
-<footer>Footer</footer>
-<script src="{{ asset('js/app.js') }}"></script>
-</body>
-</html>
-
