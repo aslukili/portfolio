@@ -15,15 +15,9 @@
         </svg>
         <div class="hidden w-full md:flex md:items-center md:w-auto" id="menu">
             <ul class="pt-4 font-bold text-base text-yellow-100 md:flex md:justify-between md:items-center md:pt-0">
-                <li>
-                    <a class="md:p-4 py-2 block hover:text-yellow-300" href="#about">whoami</a>
-                </li>
-                <li>
-                    <a class="md:p-4 py-2 block hover:text-yellow-300" href="#blog">Blog</a>
-                </li>
-                <li>
-                    <a class="md:p-4 py-2 block hover:text-yellow-300" href="#projects">Projects</a>
-                </li>
+                @foreach($navigationItems as $item)
+                    <x-layout.navbar-item :href="$item['href']">{{ $item['label'] }}</x-layout.navbar-item>
+                @endforeach
                 <li class="mb-3 md:mb-0">
                     <a class=" md:px-4 md:py-1 md:border md:rounded-md md:border-yellow-500 md:hover:bg-slate-800  md:bg-yellow-500 md:block hover:text-yellow-500 md:text-slate-800 transition ease-in delay-75"
                        href="#">Contact me</a>

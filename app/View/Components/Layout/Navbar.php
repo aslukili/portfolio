@@ -18,7 +18,6 @@ class Navbar extends Component
             ['label' => 'whoami', 'href' => '#whoami'],
             ['label' => 'Projects', 'href' => '#projects'],
             ['label' => 'Blog', 'href' => '#blog'],
-            ['label' => 'Contact', 'href' => '#contact']
         ];
         //
     }
