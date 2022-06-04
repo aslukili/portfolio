@@ -19,7 +19,7 @@
                     <x-layout.navbar-item :href="$item['href']">{{ $item['label'] }}</x-layout.navbar-item>
                 @endforeach
                 <li class="mb-3 md:mb-0">
-                    <a class=" md:px-4 md:py-1 md:border md:rounded-md md:border-yellow-500 md:hover:bg-slate-800  md:bg-yellow-500 md:block hover:text-yellow-500 md:text-slate-800 transition ease-in delay-75"
+                    <a class="btn-link"
                        href="mailto:abdeslam.loukili.contact@gmail.com">Contact me</a>
                 </li>
             </ul>
